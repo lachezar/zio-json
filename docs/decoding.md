@@ -51,6 +51,8 @@ implicit val decoder: JsonDecoder[Entity] =
 """{ "id": 42, "related": null }""".fromJson[Entity]
 ```
 
+> **_NOTE:_**  For Scala 3 you need to add "-Yretain-trees" flag to `scalacOptions` in build.sbt
+
 ## ADTs
 
 Say we extend our data model to include more data types
